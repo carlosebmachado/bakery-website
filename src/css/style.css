@@ -1,0 +1,260 @@
+* {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+/* reusable styles */
+.container{
+  display: inline-block;
+  width: 80%;
+  margin: auto;
+}
+
+.hh{
+  height: 100%;
+}
+
+.text{
+  display: inline-block;
+  width: 45%;
+}
+
+.divider{
+  color: #681212;
+  text-align: center;
+  font-size: 24pt;
+}
+
+.primary-color{
+  color: #681212;
+}
+.secondary-color{
+  color: #666;
+}
+
+h2{
+  color: #666;
+  margin: 10% 0 5% 0;
+}
+
+p{
+  color: #666;
+  font-size: 14pt;
+  text-align: left;
+}
+
+/* header */
+.header {
+  display: inline-block;
+  background-color: #681212;
+  color: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  -webkit-box-shadow: 0px -20px 9px 20px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -20px 9px 20px rgba(0,0,0,0.75);
+  box-shadow: 0px -20px 9px 20px rgba(0,0,0,0.75);
+}
+
+.header h1{
+  margin: 0;
+  display: inline-block;
+  float: left;
+  font-size: 14pt;
+  line-height: 45px;
+}
+
+.header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.header ul {
+  float: right;
+}
+
+.header ul li {
+  display: inline-block;
+  line-height: 45px;
+  margin: 0 20px;
+}
+
+.header ul li a {
+  font-size: 12pt;
+  color: white;
+  text-decoration: none;
+}
+
+/* home */
+.home{
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-color: black;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/coffee-1920.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+.home h2{
+  color: white;
+  font-size: 24pt;
+  margin: 5% 0 2% 0;
+}
+
+.home p{
+  color: white;
+  align-self: center;
+  font-size: 18pt;
+}
+
+/* menu */
+.menu{
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.menu-item{
+  display: inline-block;
+  width: 33%;
+  color: #666;
+  margin-bottom: 6%;
+}
+
+.menu-item h4{
+  /* text-align: left; */
+  margin-bottom: 6%;
+}
+
+.menu-item p{
+  text-align: center;
+}
+
+/* about */
+.about{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.about .text{
+  float: left;
+}
+
+.about p{
+  color: #666;
+}
+
+.about p:last-child{
+  margin-top: 3%;
+}
+
+.about-img{
+  display: inline-block;
+  float: right;
+  background-image: url(../img/front.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45%;
+  height: 60%;
+}
+
+/* contact */
+.contact{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+form{
+  text-align: center;
+}
+
+input, textarea{
+  width: 51%;
+  margin-top: 2%;
+  text-align: left;
+  padding: 5px 0 5px 10px;
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+textarea{
+  height: 120px;
+}
+
+input:last-child{
+  text-align: center;
+  margin: 2% 0 0 0;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: #681212;
+}
+
+/* visit */
+.visit{
+  display: block;
+  background-color: #681212;
+  width: 100%;
+  height: 100%;
+}
+
+.visit .text{
+  float: right;
+}
+
+.visit h2, .visit h3, .visit p{
+  color: white;
+}
+
+.visit h3{
+  text-align: left;
+}
+
+.map{
+  display: inline-block;
+  float: left;
+  width: 45%;
+  height: 80%;
+}
+
+.map iframe{
+  width: 100%;
+  height: 70%;
+  border:0;
+}
+
+.contact-data p, .address p{
+  margin: 5% 0 10% 0;
+}
+
+/* footer */
+footer{
+  background-color: black;
+  height: 60px;
+  margin-bottom: 0!important;
+}
+
+footer p{
+  line-height: 60px;
+  font-size: 11pt;
+  margin-bottom: 0!important;
+  text-align: center;
+}
+
+@media (max-width: 577px) {
+
+}
