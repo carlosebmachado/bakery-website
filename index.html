@@ -18,7 +18,10 @@
     <header>
         <div class="container">
             <a href="#home"><h1>Bakery</h1></a>
-            <nav>
+            <button id="hmenu">
+                <img src="img/hmenu.png" alt="Menu Icon">
+            </button>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#menu">Menu</a></li>
@@ -142,15 +145,7 @@
     </footer>
 
     <script src="js/jquery.min.js"></script>
-    <script>
-        var $doc = $('html, body');
-        $('a').click(function() {
-            $doc.animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-            }, 500);
-            return false;
-        });
-    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
