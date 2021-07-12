@@ -149,15 +149,13 @@ header a:hover {
   text-align: center;
 }
 
-
 .menu-item h3 {
-  /* display: inline-block; */
   margin-bottom: 20px;
 }
 
 .menu-item {
   display: inline-block;
-  width: 33%;
+  width: 33.3%;
   color: var(--text-color);
   margin-bottom: 60px;
 }
@@ -171,10 +169,16 @@ header a:hover {
  */
 #about {
   padding-top: 100px;
+  vertical-align: top;
 }
 
-#about div .side {
+#about .side {
   vertical-align: top;
+}
+
+#about img {
+  object-fit: cover;
+  height: 400px;
 }
 
 #about p {
@@ -295,6 +299,11 @@ footer small {
   line-height: 40px;
   color: var(--text-color);
 }
+
+@media (max-width: 768px) {
+
+}
+
 
 @media (max-width: 577px) {
 }
