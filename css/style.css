@@ -22,7 +22,7 @@ body {
  * Reusable styles
  */
  section {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 
@@ -62,6 +62,7 @@ text {
  * Header
  */
 header {
+  z-index: 1;
   display: inline-block;
   width: 100%;
   height: 45px;
@@ -173,15 +174,12 @@ header a:hover {
 }
 
 #about div .side {
-  padding-right: 30px;
+  vertical-align: top;
 }
-
-/* #about img .side {
-  padding-left: 30px;
-} */
 
 #about p {
   margin-bottom: 20px;
+  color: var(--text-color);
   text-align: justify;
 }
 
@@ -189,13 +187,15 @@ header a:hover {
  * Contact
  */
 #contact {
+  padding-top: 100px;
 }
 
 form {
   text-align: center;
+  padding-bottom: 30px;
 }
 
-input,
+input[type=text],
 textarea {
   width: 50%;
   margin-top: 10px;
@@ -203,6 +203,17 @@ textarea {
   padding: 5px 10px 5px 10px;
   border-width: 1px;
   border-radius: 5px;
+  border: 1px solid var(--text-color);
+  transition: all 0.3s ease;
+}
+
+input[type=text]:hover, textarea:hover {
+  border: 1px solid black;
+}
+
+input[type=text]:focus, textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
 }
 
 textarea {
@@ -211,6 +222,8 @@ textarea {
 }
 
 input[type=submit] {
+  width: 50%;
+  border-radius: 5px;
   text-align: center;
   margin-top: 20px;
   padding: 0;
@@ -218,18 +231,20 @@ input[type=submit] {
   border: none;
   color: white;
   cursor: pointer;
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+input[type=submit]:hover {
+  opacity: 0.95;
 }
 
 /* 
  * Visit
  */
 #visit {
+  padding-top: 100px;
   background-color: var(--primary-color);
-}
-
-#visit .text {
-  float: right;
 }
 
 #visit h2,
@@ -238,12 +253,12 @@ input[type=submit] {
   color: white;
 }
 
-#visit h3 {
-  text-align: left;
+#visit .side {
+  vertical-align: top;
 }
 
 .map {
-  height: 56%;
+  height: 300px;
 }
 
 .map iframe {
