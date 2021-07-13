@@ -17,7 +17,9 @@ $('#hmenu').click(function () {
 });
 
 $('header nav a').click(function () {
-  $('#nav-menu').hide();
+  if ($(window).width() <= 540) {
+    $('#nav-menu').hide();
+  }
 });
 
 $(document).ready(function() {
@@ -25,7 +27,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-  if (window.screen.width <= 540) {
+  if ($(window).width() <= 540) {
     $('#nav-menu').hide();
     $('#hmenu').show();
   } else {
